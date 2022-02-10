@@ -1,0 +1,155 @@
+.pets{
+   padding: 60px 0px 15px 0px;
+   position: relative;
+   z-index: 1;
+   &::before{
+      content: "";
+      position: absolute;
+      z-index: 1;
+      background-image: url(../../img/Penguin.png);
+      width: 33px;
+      height: 66px;
+      right: calc(50% - 580px);
+      top: 665px;
+   }
+}
+.pets__enter{
+   display: flex;
+   margin-bottom: 60px;
+}
+.pets__title{
+   font-family: "Rubik";
+   font-style: normal;
+   font-weight: normal;
+   font-size: 24px;
+   line-height: 28px;
+   text-transform: uppercase;
+   color: #0D444D;
+   margin: 0px auto 0px 0px;
+}
+.pets__link{
+   width: 305px;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   font-family: "Roboto Mono";
+   font-style: normal;
+   font-weight: normal;
+   font-size: 16px;
+   line-height: 21px;
+   letter-spacing: 0.1em;
+   text-transform: uppercase;
+   color: #19707D;
+   padding: 10px 20px 10px 23px;
+   border: 1.5px solid #19707D;
+   text-decoration: none;
+   border-radius: 100px;
+   position: relative;
+   z-index: 0;
+   transition: 0.2s ease;
+   &:hover{
+      color: #fff;
+      background-color: #19707D;
+   }
+   &:hover svg{
+      fill: #19707D;
+   }
+   &:hover svg path{
+      stroke: #fff;
+   }
+}
+svg, path{
+   transition: 0.2s ease;
+}
+.pets__list{
+   display: flex;
+   flex-wrap: wrap;
+   padding: 0px;
+   margin: 0px;
+   list-style: none;
+}
+.pets__item{
+   background: #FFFFFF;
+   box-shadow: 0px 1.83498px 27.5247px rgba(0, 0, 0, 0.06);
+   border-radius: 9.17492px;
+   width: 336px;
+   padding-top: 25px;
+}
+.pets__item:nth-child(1){
+   width: 352px;
+}
+.pets__item:nth-child(2){
+   margin: 0px 35px auto 20px;
+}
+.pets__item:nth-child(3){
+   margin-bottom: auto;
+}
+.pets__item:nth-child(5){
+   margin: 20px 35px 0px 35px;
+}
+.pets__item:nth-child(4){
+   margin-top: 20px;
+}
+.pets__item:nth-child(6){
+   margin-top: 20px;
+}
+
+.pets__img{
+   display: block;
+   margin: 0px auto 25px;
+}
+.pets__info{
+   border-top: 1px solid #E5EAEB;
+   padding: 15px 0px 15px 20px;
+   position: relative;
+   z-index: 1;
+}
+.pets__info::before{
+   content: "";
+   position: absolute;
+   z-index: 1;
+   background-image: url(../../img/tv.png);
+   width: 22px;
+   height: 22px;
+   right: 25px;
+   top: 25px;
+   cursor: pointer;
+}
+.pets__name{
+   font-family: "Roboto";
+   font-style: normal;
+   font-weight: 500;
+   font-size: 17.2414px;
+   line-height: 20px;
+   margin-top: 0px;
+   margin-bottom: 7px;
+   color: #2D2D2D;
+}
+.pets__describe{
+   font-family: "Roboto";
+   font-style: normal;
+   font-weight: normal;
+   font-size: 12.8449px;
+   line-height: 15px;
+   margin: 0px;
+   color: #919191;
+}
+.pets__buttun{
+   position: absolute;
+   z-index: 2;
+   border: none;
+   background-color: transparent;
+   right: calc(50% - 590px);
+   top: calc(50% + 20px);
+   cursor: pointer;
+   &:hover{
+      background-color: #fff;
+      box-shadow: 0px 1.83498px 27.5247px rgba(0, 0, 0, 0.06);
+   }
+   &:active{
+      box-shadow: none;
+   }
+}
+.pets__buttun--bot{
+   top: calc(50% + 80px);
+}

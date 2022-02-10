@@ -1,0 +1,70 @@
+.look{
+   padding-top: 30px;
+   padding-bottom: 65px;
+   position: relative;
+   z-index: 1;
+}
+.look__title{
+   font-family: "Rubik";
+   font-style: normal;
+   font-weight: normal;
+   font-size: 24px;
+   line-height: 28px;
+   text-transform: uppercase;
+   color: #0D444D;
+   margin-top: 0px;
+   margin-bottom: 45px;
+}
+.look__list{
+   display: flex;
+   list-style: none;
+   margin: 0px;
+   padding: 0px;
+}
+.look__element{
+   width: 105px;
+}
+.look__element + .look__element{
+   margin-left: 80px;
+}
+.look__animals-link{
+   display: inline-block;
+   text-align: center;
+   text-decoration: none;
+   &:hover .look__animals-name{
+      color: #618f92;
+   }
+}
+.look__animals-img{
+   margin-bottom: 8px;
+}
+.look__animals-name{
+   font-family: "Roboto Mono";
+   font-style: normal;
+   font-weight: 500;
+   font-size: 14px;
+   line-height: 18px;
+   text-align: center;
+   text-transform: uppercase;
+   color: #2D2D2D;
+}
+
+.look__buttun{
+   position: absolute;
+   z-index: 2;
+   border: none;
+   background-color: transparent;
+   right: calc(50% - 570px);
+   top: calc(50% - 40px);
+   cursor: pointer;
+   &:hover{
+      background-color: #fff;
+      box-shadow: 0px 1.83498px 27.5247px rgba(0, 0, 0, 0.06);
+   }
+   &:active{
+      box-shadow: none;
+   }
+}
+.look__buttun--bot{
+   top: calc(50% + 10px);
+}

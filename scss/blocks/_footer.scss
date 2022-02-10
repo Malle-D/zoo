@@ -1,0 +1,29 @@
+.footer{
+   background-color: #2A8086;
+   padding: 20px 0px;
+}
+.footer__inside{
+   display: flex;
+   align-items: center;
+}
+.footer__logo-link{
+   margin-right: 55px;
+   transition: 0.2s ease;
+   &:hover{
+      opacity: 0.8;
+   }
+}
+.footer__describe{
+   font-family: "Roboto";
+   font-style: normal;
+   font-weight: normal;
+   font-size: 12px;
+   line-height: 14px;
+   text-align: right;
+   text-transform: uppercase;
+   color: #FFFFFF;
+   margin: 0px;
+}
+.footer__describe + .footer__describe{
+   margin-top: 8px;
+}
